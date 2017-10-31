@@ -6,13 +6,13 @@
         Recent News
       </div>
       <ul class="mdl-list">
-          <li class="mdl-list__item" v-for="article in articles">
-            <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">description</i>
-            <router-link :to="{ name: 'BlogDetail', params: {id:article._id} }">{{article.title}}</router-link>
-            </span>
-          </li>
-        </ul>
+        <li class="mdl-list__item" v-for="article in articles">
+          <span class="mdl-list__item-primary-content">
+          <i class="material-icons mdl-list__item-icon">description</i>
+          <router-link :to="{ name: 'BlogDetail', params: {id:article._id} }">{{article.title}}</router-link>
+          </span>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="mdl-cell mdl-cell--10-col">
