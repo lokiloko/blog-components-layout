@@ -12,10 +12,10 @@
           <router-link :to="{ name: 'Main', params: {} }" class="mdl-navigation__link">Main</router-link>
           <router-link :to="{ name: 'Blog', params: {} }" class="mdl-navigation__link">Blog</router-link>
           <p class="mdl-navigation__link show-modal" id="login" v-if="!loggedIn">Login</p>
-          <div v-else>
+          <span v-else>
             <p class="mdl-navigation__link" id="logout" v-on:click="doLogOut">Logout</p>
             <router-link :to="{ name: 'Dashboard', params: {} }" class="mdl-navigation__link">Dashboard</router-link>
-          </div>
+          </span>
         </nav>
       </div>
     </header>
