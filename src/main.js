@@ -3,11 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import axios from 'axios'
-
-Vue.prototype.$http = axios.create({
-  baseURL: 'http://localhost:3000/api'
-})
+import swal from 'sweetalert2'
+import VueMaterial from 'vue-material'
+import store from './vuex/store'
 
 Vue.config.productionTip = false
 
