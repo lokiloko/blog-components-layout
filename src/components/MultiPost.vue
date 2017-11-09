@@ -12,7 +12,7 @@
           {{article.content.substring(0, 100)}}
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" @click="redirectTo(article._id)">
             Read More
           </a>
         </div>
@@ -34,6 +34,11 @@ export default {
   data: () => {
     return {
 
+    }
+  },
+  methods: {
+    redirectTo (id) {
+      this.$router.push('/blog/' + id)
     }
   }
 }

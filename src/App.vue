@@ -77,7 +77,7 @@ export default {
   methods: {
     getAllArticle () {
       this.$http.get('/article').then((data) => {
-        this.articles = data.data
+        this.articles = data.data.reverse()
       })
     },
     registerMessage (value) {
