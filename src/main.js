@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 
 Vue.prototype.$http = axios.create({
-  baseURL: 'http://localhost:3000/api'
+  baseURL: 'http://blogtdd-api.ianwinanto.cf/api'
 })
 
 Vue.config.productionTip = false
